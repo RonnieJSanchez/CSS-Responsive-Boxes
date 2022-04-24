@@ -65,6 +65,7 @@ div.b {
     width:auto;
     height:auto;
     min-height:20vh;
+    min-width:15vw;
   }
  
 
