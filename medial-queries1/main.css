@@ -3,8 +3,7 @@ body {
   background: rgb(8, 8, 8);
 }
 
-* {
-  
+* { 
   margin:auto
   width: 100%;
   height: auto;
@@ -57,9 +56,13 @@ div.b {
   }
   div.a {
     width: 100%;
+    min-height:20vh;
   }
   div.b, div.c, div.a{
     margin: .5em;
+  }
+  div.b {   
+    min-height:40vh;
   }
   div.c {
     width:auto;

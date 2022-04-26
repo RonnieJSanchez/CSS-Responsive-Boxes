@@ -1,3 +1,44 @@
 body {
   background: papayawhip;
 }
+.child {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 10px;
+}
+.c,
+.d,
+.e {
+  width: 33%;
+}
+.container-2 {
+  display: flex;
+  flex-direction: column;
+}
+.container-3 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* For mobile phones: */
+@media (min-width: 600px) {
+  .a {
+    width: 100%;
+  }
+  .container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container-2 {
+    width: 66%;
+  }
+  .f {
+    width: 32%;
+    height: auto;
+  }
+}
