@@ -4,11 +4,11 @@ body {
 .child {
   background-color: #0080c6;
   color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150px;
+  height: 200px;
   margin: 10px;
-  max-width: 1200px;
 }
 
 .b,
@@ -17,20 +17,31 @@ body {
 .e,
 .f,
 .g {
-  min-width: 25%;
+  min-width: 30%;
+}
+.a {
+  width: fit-content;
+}
+.container-1 {
+  display: flex;
+  width: 100%;
 }
 .container-2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
 }
 .container-3 {
   display: flex;
   flex-direction: row;
-}
-.h {
-  display: flex;
   flex-wrap: wrap;
-  min-width: 25%;
+  justify-content: space-evenly;
+}
+.container-4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* For mobile phones: */
@@ -47,10 +58,14 @@ body {
     width: 66%;
   }
   .container-3 {
-    width: 66%;
+    flex-direction: row;
+  }
+  .container-4 {
+    flex-direction: row;
   }
   .h {
-    width: 25%;
-    height: 100%;
+    flex: 2;
+    flex-direction: row;
+    height: auto;
   }
 }
